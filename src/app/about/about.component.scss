@@ -1,0 +1,23 @@
+@import "../../../node_modules/rfs/scss";
+
+.title {
+  @include font-size(4rem);
+}
+
+.article__title {
+  @include font-size(2rem);
+}
+
+.f-col {
+  background: linear-gradient(to right, #ffe0b2, #ffb74d);
+}
+
+.s-col {
+  padding: 0;
+}
+
+:host ::ng-deep .carousel-control-prev-icon,
+:host ::ng-deep .carousel-control-next-icon {
+  width: 100px;
+  height: 100px;
+}
