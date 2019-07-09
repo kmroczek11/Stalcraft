@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+declare var $: any;
 
 @Component({
   selector: "app-implementations",
@@ -18,7 +19,14 @@ export class ImplementationsComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    $(document).ready(() => {
+      $("#map-europe").CSSMap({
+        size: 960
+      });
+      // END OF THE CSSMap;
+    });
+  }
 
   onSelect(country) {
     console.log("ok");

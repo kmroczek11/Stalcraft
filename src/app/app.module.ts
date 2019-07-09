@@ -16,7 +16,10 @@ import { ImplementationsComponent } from "./implementations/implementations.comp
 import { ReferencesComponent } from "./references/references.component";
 import { PolandComponent } from "./poland/poland.component";
 import { NgxGalleryModule } from "ngx-gallery";
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from "./footer/footer.component";
+import { ConnectionService } from "./connection.service";
+import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -34,11 +37,14 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
+    // CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
