@@ -20,6 +20,9 @@ import { FooterComponent } from "./footer/footer.component";
 import { ConnectionService } from "./connection.service";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { SlickCarouselModule } from "ngx-slick-carousel";
+import { BelgiumComponent } from './belgium/belgium.component';
+import { NetherlandsComponent } from './netherlands/netherlands.component';
 
 @NgModule({
   declarations: [
@@ -31,18 +34,20 @@ import { HttpClientModule } from "@angular/common/http";
     ImplementationsComponent,
     ReferencesComponent,
     PolandComponent,
-    FooterComponent
+    FooterComponent,
+    BelgiumComponent,
+    NetherlandsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
-    // CommonModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     NgxGalleryModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule
   ],
   providers: [ConnectionService],
   bootstrap: [AppComponent]

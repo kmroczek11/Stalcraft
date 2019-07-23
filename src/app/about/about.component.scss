@@ -1,15 +1,23 @@
 @import "../../../node_modules/rfs/scss";
 
 .title {
-  @include font-size(4rem);
+  @include font-size(2.5rem);
 }
 
 .article__title {
-  @include font-size(2rem);
+  @include font-size(1.5rem);
+}
+
+button {
+  @include font-size(1rem);
+}
+
+.text {
+  padding: 10% !important;
 }
 
 .f-col {
-  background: linear-gradient(to right, #ffe0b2, #ffb74d);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .s-col {
@@ -20,4 +28,19 @@
 :host ::ng-deep .carousel-control-next-icon {
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 1900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .second {
+    max-height: 50% !important;
+  }
 }

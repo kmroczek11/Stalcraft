@@ -1,0 +1,26 @@
+@import "../../../node_modules/rfs/scss";
+
+#main {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.card {
+  width: 30%;
+  padding: 1%;
+  margin: 1%;
+}
+
+h2 {
+  @include font-size(2rem);
+}
+
+h4{
+  @include font-size(1.5rem);
+}
+
+p {
+  @include font-size(1.5rem);
+}

@@ -49,19 +49,29 @@ export class PolandComponent implements OnInit {
         big: "assets/poland/1.jpg"
       },
       {
-        small: "assets/poland/1.jpg",
-        medium: "assets/poland/1.jpg",
-        big: "assets/poland/1.jpg"
+        small: "assets/poland/2.jpg",
+        medium: "assets/poland/2.jpg",
+        big: "assets/poland/2.jpg"
       },
       {
-        small: "assets/poland/1.jpg",
-        medium: "assets/poland/1.jpg",
-        big: "assets/poland/1.jpg"
+        small: "assets/poland/3.jpg",
+        medium: "assets/poland/3.jpg",
+        big: "assets/poland/3.jpg"
       },
       {
-        small: "assets/poland/1.jpg",
-        medium: "assets/poland/1.jpg",
-        big: "assets/poland/1.jpg"
+        small: "assets/poland/4.jpg",
+        medium: "assets/poland/4.jpg",
+        big: "assets/poland/4.jpg"
+      },
+      {
+        small: "assets/poland/5.jpg",
+        medium: "assets/poland/5.jpg",
+        big: "assets/poland/5.jpg"
+      },
+      {
+        small: "assets/poland/6.jpg",
+        medium: "assets/poland/6.jpg",
+        big: "assets/poland/6.jpg"
       }
     ];
   }

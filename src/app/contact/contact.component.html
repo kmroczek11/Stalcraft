@@ -4,7 +4,7 @@
   [formGroup]="contactForm"
   (ngSubmit)="onSubmit()"
 >
-  <p class="h4 mb-4">Contact us</p>
+  <p class="h4 mb-4">Skontaktuj się z nami</p>
 
   <!-- Name -->
   <input
@@ -13,7 +13,7 @@
     id="defaultContactFormName"
     mdbInput
     class="form-control mb-4"
-    placeholder="Name"
+    placeholder="Imię"
   />
 
   <!-- Email -->
@@ -27,16 +27,16 @@
   />
 
   <!-- Subject -->
-  <label>Subject</label>
+  <label>Temat</label>
   <select
     formControlName="contactFormSubjects"
     class="browser-default custom-select mb-4"
   >
-    <option value="" disabled>Choose option</option>
-    <option value="1" selected>Feedback</option>
-    <option value="2">Report a bug</option>
-    <option value="3">Feature request</option>
-    <option value="4">Feature request</option>
+    <option value="" disabled>Wybierz opcję</option>
+    <option value="Zlecenie" selected>Zlecenie</option>
+    <option value="Współpraca">Współpraca</option>
+    <option value="Opinia">Opinia</option>
+    <option value="Inne">Inne</option>
   </select>
 
   <!-- Message -->
@@ -47,7 +47,7 @@
       mdbInput
       id="exampleFormControlTextarea2"
       rows="3"
-      placeholder="Message"
+      placeholder="Wiadomość"
     ></textarea>
   </div>
 
@@ -60,7 +60,7 @@
       id="defaultContactFormCopy"
     />
     <label class="custom-control-label" for="defaultContactFormCopy"
-      >Send me a copy of this message</label
+      >Prześlij mi kopię tej wiadomości</label
     >
   </div>
 
@@ -75,7 +75,7 @@
     type="submit"
     [disabled]="disabledSubmitButton"
   >
-    Send
+    Wyślij
   </button>
 </form>
 <!-- Default form contact -->
