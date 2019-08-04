@@ -1,3 +1,13 @@
 a{
     color:#ef6c00 !important;
+    font-family: Stenciland;
+}
+
+a:hover{
+    color:#b15408 !important;
+}
+
+@font-face {
+    font-family: Stenciland;
+    src: url("../../assets/fonts/Stenciland.otf") format("opentype");
 }

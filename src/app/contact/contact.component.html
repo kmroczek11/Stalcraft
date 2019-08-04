@@ -4,7 +4,7 @@
   [formGroup]="contactForm"
   (ngSubmit)="onSubmit()"
 >
-  <p class="h4 mb-4">Skontaktuj się z nami</p>
+  <p i18n="Form Contact Us|Contact Form's Header@@contactFormHeader" class="h4 mb-4">Skontaktuj się z nami</p>
 
   <!-- Name -->
   <input
@@ -14,6 +14,7 @@
     mdbInput
     class="form-control mb-4"
     placeholder="Imię"
+    i18n-placeholder="Form Name|Name in contact form@@contactFormName"
   />
 
   <!-- Email -->
@@ -24,19 +25,22 @@
     mdbInput
     class="form-control mb-4"
     placeholder="E-mail"
+    i18n-placeholder="Form E-mail|E-mail in contact form@@contactFormEmail"
   />
 
   <!-- Subject -->
-  <label>Temat</label>
+  <label
+  i18n="Form Subject|Subject in contact form@@contactFormSubject"
+  >Temat</label>
   <select
     formControlName="contactFormSubjects"
     class="browser-default custom-select mb-4"
   >
-    <option value="" disabled>Wybierz opcję</option>
-    <option value="Zlecenie" selected>Zlecenie</option>
-    <option value="Współpraca">Współpraca</option>
-    <option value="Opinia">Opinia</option>
-    <option value="Inne">Inne</option>
+    <option i18n="Form Choose Option|Choose Option in contact form@@contactFormChooseOption" value="" disabled>Wybierz opcję</option>
+    <option i18n="Form Order Option|Order Option in contact form@@contactFormOrderOption" value="Zlecenie" selected>Zlecenie</option>
+    <option i18n="Form Collaboration Option|Collaboration Option in contact form@@contactFormCollaborationOption" value="Współpraca">Współpraca</option>
+    <option i18n="Form Opinion Option|Opinion Option in contact form@@contactFormOpinionOption" value="Opinia">Opinia</option>
+    <option i18n="Form Other Option|Other Option in contact form@@contactFormOtherOption" value="Inne">Inne</option>
   </select>
 
   <!-- Message -->
@@ -48,6 +52,7 @@
       id="exampleFormControlTextarea2"
       rows="3"
       placeholder="Wiadomość"
+      i18n-placeholder="Form E-mail|E-mail in contact form@@contactFormEmail"
     ></textarea>
   </div>
 
@@ -60,6 +65,7 @@
       id="defaultContactFormCopy"
     />
     <label class="custom-control-label" for="defaultContactFormCopy"
+    i18n="Send Me Copy Option|Send me Copy Option in contact form@@contactFormSendMeCopyOption"
       >Prześlij mi kopię tej wiadomości</label
     >
   </div>
@@ -74,6 +80,7 @@
     mdbWavesEffect
     type="submit"
     [disabled]="disabledSubmitButton"
+    i18n="Send Button|Send Button in contact form@@contactFormSendButton"
   >
     Wyślij
   </button>

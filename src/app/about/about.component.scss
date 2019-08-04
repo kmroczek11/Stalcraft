@@ -1,15 +1,18 @@
 @import "../../../node_modules/rfs/scss";
 
-.title {
+.header {
   @include font-size(2.5rem);
+  font-family: Capture;
 }
 
-.article__title {
+.content {
   @include font-size(1.5rem);
+  font-family: 'Black Ops One', cursive;
 }
 
 button {
   @include font-size(1rem);
+  font-family: 'Black Ops One', cursive;
 }
 
 .text {
@@ -24,10 +27,20 @@ button {
   padding: 0;
 }
 
+:host ::ng-deep .carousel-control-prev,
+:host ::ng-deep .carousel-control-next,
 :host ::ng-deep .carousel-control-prev-icon,
 :host ::ng-deep .carousel-control-next-icon {
   width: 100px;
   height: 100px;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@font-face {
+  font-family: Capture;
+  src: url("../../assets/fonts/Capture_it.ttf") format("opentype");
 }
 
 @media (max-width: 1900px) {
@@ -42,5 +55,11 @@ button {
 
   .second {
     max-height: 50% !important;
+  }
+}
+
+@media (max-width: 1900px) and (min-width: 1000px){
+  img{
+    height:800px;
   }
 }

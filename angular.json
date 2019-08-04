@@ -83,6 +83,14 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "en":{
+              "aot": true,
+              "outputPath": "dist/en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -94,6 +102,9 @@
           "configurations": {
             "production": {
               "browserTarget": "mdb-angular-free:build:production"
+            },
+            "en":{
+              "browserTarget": "mdb-angular-free:build:en"
             }
           }
         },

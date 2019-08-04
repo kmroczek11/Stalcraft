@@ -15,12 +15,19 @@
 
 h2 {
   @include font-size(2rem);
+  font-family: "Black Ops One", cursive;
 }
 
 h4{
-  @include font-size(1.5rem);
+  @include font-size(1.2rem);
+  font-family: "Black Ops One", cursive;
 }
 
 p {
-  @include font-size(1.5rem);
+  @include font-size(1.2rem);
+  font-family: "Black Ops One", cursive;
+}
+
+.card{
+  min-width:200px;
 }

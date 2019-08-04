@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="aboutLink" datatype="html">
+        <source>O firmie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Navbar&apos;s about link</note>
+        <note priority="1" from="meaning">About link</note>
+      </trans-unit>
+      <trans-unit id="offerLink" datatype="html">
+        <source>Oferta</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Navbar&apos;s offer link</note>
+        <note priority="1" from="meaning">Offer link</note>
+      </trans-unit>
+      <trans-unit id="implementationsLink" datatype="html">
+        <source>Realizacje</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Navbar&apos;s implementations link</note>
+        <note priority="1" from="meaning">Implementations link</note>
+      </trans-unit>
+      <trans-unit id="referencesLink" datatype="html">
+        <source>Referencje</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">Navbar&apos;s references link</note>
+        <note priority="1" from="meaning">References link</note>
+      </trans-unit>
+      <trans-unit id="contactLink" datatype="html">
+        <source>Kontakt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Navbar&apos;s contact link</note>
+        <note priority="1" from="meaning">Contact link</note>
+      </trans-unit>
+      <trans-unit id="aboutPageTitle" datatype="html">
+        <source>Poznaj STALCRAFT...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Header for the about page</note>
+        <note priority="1" from="meaning">About Page Header</note>
+      </trans-unit>
+      <trans-unit id="aboutPageDescription" datatype="html">
+        <source>
+            Firma STALCRAFT powstała w 2014 roku i już od samego początku
+            swojego istnienia skupia swoje działanie w obszarze instalacji
+            procesowych w obiektach przemysłu spożywczego, farmaceutycznego oraz
+            chemicznego ze stali nierdzewnych.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>O naszej jakości decydują
+            doświadczeni pracownicy, posiadający wiedzę niezbędną do
+            rozwiązywania problematyki i złożoności każdego projektu.
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Description for the about page</note>
+        <note priority="1" from="meaning">About Page Description</note>
+      </trans-unit>
+      <trans-unit id="contactButtonContent" datatype="html">
+        <source>
+            Skontaktuj się z nami<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Content of the contact button</note>
+        <note priority="1" from="meaning">Contact Button</note>
+      </trans-unit>
+      <trans-unit id="contactFormHeader" datatype="html">
+        <source>Skontaktuj się z nami</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Contact Form&apos;s Header</note>
+        <note priority="1" from="meaning">Form Contact Us</note>
+      </trans-unit>
+      <trans-unit id="contactFormName" datatype="html">
+        <source>Imię</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Name in contact form</note>
+        <note priority="1" from="meaning">Form Name</note>
+      </trans-unit>
+      <trans-unit id="contactFormEmail" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">E-mail in contact form</note>
+        <note priority="1" from="meaning">Form E-mail</note>
+      </trans-unit>
+      <trans-unit id="contactFormSubject" datatype="html">
+        <source>Temat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Subject in contact form</note>
+        <note priority="1" from="meaning">Form Subject</note>
+      </trans-unit>
+      <trans-unit id="contactFormChooseOption" datatype="html">
+        <source>Wybierz opcję</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Choose Option in contact form</note>
+        <note priority="1" from="meaning">Form Choose Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormOrderOption" datatype="html">
+        <source>Zlecenie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Order Option in contact form</note>
+        <note priority="1" from="meaning">Form Order Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormCollaborationOption" datatype="html">
+        <source>Współpraca</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Collaboration Option in contact form</note>
+        <note priority="1" from="meaning">Form Collaboration Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormOpinionOption" datatype="html">
+        <source>Opinia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Opinion Option in contact form</note>
+        <note priority="1" from="meaning">Form Opinion Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormOtherOption" datatype="html">
+        <source>Inne</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Other Option in contact form</note>
+        <note priority="1" from="meaning">Form Other Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormSendMeCopyOption" datatype="html">
+        <source>Prześlij mi kopię tej wiadomości</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description">Send me Copy Option in contact form</note>
+        <note priority="1" from="meaning">Send Me Copy Option</note>
+      </trans-unit>
+      <trans-unit id="contactFormSendButton" datatype="html">
+        <source>
+    Wyślij
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Send Button in contact form</note>
+        <note priority="1" from="meaning">Send Button</note>
+      </trans-unit>
+      <trans-unit id="offerPageTitle" datatype="html">
+        <source>Czym się zajmujemy?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/offer/offer.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Header for the offer page</note>
+        <note priority="1" from="meaning">Offer Page Header</note>
+      </trans-unit>
+      <trans-unit id="offerPageDescription" datatype="html">
+        <source>
+    Główny zakres usług to montaże i remonty instalacji przemysłowych;
+    rurociągów, zbiorników i konstrukcji. Oferujemy różne formy współpracy
+    począwszy od samodzielnej wyceny i wykonania robót z materiałów własnych lub
+    powierzonych przez klienta. Jednocześnie oferujemy wynajem wykwalifikowanych
+    pracowników do wykonywania wyżej wymienionych prac.
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/offer/offer.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Description for the offer page</note>
+        <note priority="1" from="meaning">Offer Page Description</note>
+      </trans-unit>
+      <trans-unit id="foodIndustryHeader" datatype="html">
+        <source>Branża spożywcza</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/offer/offer.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Header for the food industry</note>
+        <note priority="1" from="meaning">Food Industry Header</note>
+      </trans-unit>
+      <trans-unit id="chemicalIndustryHeader" datatype="html">
+        <source>Branża chemiczna</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/offer/offer.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Header for the chemical industry</note>
+        <note priority="1" from="meaning">Chemical Industry Header</note>
+      </trans-unit>
+      <trans-unit id="pharmaceuticalIndustryHeader" datatype="html">
+        <source>Branża farmaceutyczna</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/offer/offer.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Header for the pharmaceutical industry</note>
+        <note priority="1" from="meaning">Pharmaceutical Industry Header</note>
+      </trans-unit>
+      <trans-unit id="footerTitle" datatype="html">
+        <source>Dane do kontaktu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Header for the footer</note>
+        <note priority="1" from="meaning">Footer Header</note>
+      </trans-unit>
+      <trans-unit id="findUsHeader" datatype="html">
+        <source>Znajdź nas na</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Header for the find us element</note>
+        <note priority="1" from="meaning">Find Us Header</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -5,9 +5,9 @@
       <div
         class="text py-3 px-md-5 d-flex flex-column justify-content-center align-items-center h-100"
       >
-        <h1 class="title h1 my-4">Poznaj STALCRAFT...</h1>
+        <h1 i18n="About Page Header|Header for the about page@@aboutPageTitle" class="header h1 my-4">Poznaj STALCRAFT...</h1>
         <article class="article">
-          <h2 class="article__title text-justify">
+          <h2 i18n="About Page Description|Description for the about page@@aboutPageDescription" class="content text-justify">
             Firma STALCRAFT powstała w 2014 roku i już od samego początku
             swojego istnienia skupia swoje działanie w obszarze instalacji
             procesowych w obiektach przemysłu spożywczego, farmaceutycznego oraz
@@ -24,6 +24,7 @@
             class="btn btn-margin btn-rounded"
             mdbWavesEffect
             routerLink="/contact"
+            i18n="Contact Button|Content of the contact button@@contactButtonContent"
           >
             Skontaktuj się z nami<i class="fas fa-caret-right ml-3"></i>
           </button>
@@ -33,25 +34,25 @@
 
     <div class="second col-md-6 w-100 s-col">
       <div class="view">
-        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel class="carousel slide carousel-fade" [animation]='fade' [interval]='2000'>
           <mdb-carousel-item>
             <img
               class="d-block w-100"
-              src="../../assets/homegallery/1.jpg"
+              src="../../assets/homeGallery/1.jpg"
               alt="First slide"
             />
           </mdb-carousel-item>
           <mdb-carousel-item>
             <img
               class="d-block w-100"
-              src="../../assets/homegallery/2.jpg"
+              src="../../assets/homeGallery/2.jpg"
               alt="Second slide"
             />
           </mdb-carousel-item>
           <mdb-carousel-item>
             <img
               class="d-block w-100"
-              src="../../assets/homegallery/3.jpg"
+              src="../../assets/homeGallery/3.jpg"
               alt="Third slide"
             />
           </mdb-carousel-item>

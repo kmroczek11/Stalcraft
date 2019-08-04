@@ -1,7 +1,23 @@
-.icon{
-    padding-right: 2%;
+.icon {
+  padding-right: 2%;
 }
 
-p, h5, span{
-    color:#ef6c00 !important;
+p,
+h5,
+span {
+  color: #ef6c00 !important;
+}
+
+h5 {
+  font-family: Capture;
+}
+
+span,
+p {
+  font-family: "Black Ops One", cursive;
+}
+
+@font-face {
+  font-family: Capture;
+  src: url("../../assets/fonts/Capture_it.ttf") format("opentype");
 }
