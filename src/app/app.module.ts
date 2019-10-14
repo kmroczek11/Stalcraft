@@ -21,8 +21,9 @@ import { ConnectionService } from "./connection.service";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { SlickCarouselModule } from "ngx-slick-carousel";
-import { BelgiumComponent } from './belgium/belgium.component';
-import { NetherlandsComponent } from './netherlands/netherlands.component';
+import { BelgiumComponent } from "./belgium/belgium.component";
+import { NetherlandsComponent } from "./netherlands/netherlands.component";
+import { SlideshowModule } from "ng-simple-slideshow";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { NetherlandsComponent } from './netherlands/netherlands.component';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    SlideshowModule,
     AppRoutingModule,
     NgxGalleryModule,
     HttpClientModule,

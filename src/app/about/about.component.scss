@@ -7,12 +7,12 @@
 
 .content {
   @include font-size(1.5rem);
-  font-family: 'Black Ops One', cursive;
+  font-family: "Black Ops One", cursive;
 }
 
 button {
   @include font-size(1rem);
-  font-family: 'Black Ops One', cursive;
+  font-family: "Black Ops One", cursive;
 }
 
 .text {
@@ -28,15 +28,13 @@ button {
   padding: 0;
 }
 
-:host ::ng-deep .carousel-control-prev,
-:host ::ng-deep .carousel-control-next,
-:host ::ng-deep .carousel-control-prev-icon,
-:host ::ng-deep .carousel-control-next-icon {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
+:host ::ng-deep img{
+  width:100%;
+}
+
+:host ::ng-deep .slick-dots {
+  display: flex !important;
+  justify-content: center;
 }
 
 @font-face {
@@ -56,11 +54,5 @@ button {
 
   .second {
     max-height: 50% !important;
-  }
-}
-
-@media (max-width: 1900px) and (min-width: 1000px){
-  img{
-    height:800px;
   }
 }
