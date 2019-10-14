@@ -11,9 +11,9 @@ export class ImplementationsComponent implements OnInit {
   countries = [
     { class: "eu35", name: "Poland" },
     { class: "eu5", name: "Belgium" },
-    { class: "eu20", name: "Ireland" },
-    { class: "eu11", name: "Denmark" },
-    { class: "eu16", name: "Germany" },
+    //{ class: "eu20", name: "Ireland" },
+    //{ class: "eu11", name: "Denmark" },
+    //{ class: "eu16", name: "Germany" },
     { class: "eu33", name: "Netherlands" }
   ];
 
@@ -23,7 +23,8 @@ export class ImplementationsComponent implements OnInit {
     $(document).ready(() => {
       $("#map-europe").CSSMap({
         size: 960,
-        activateOnLoad: ["eu35", "eu5", "eu20", "eu11", "eu16", "eu33"]
+        //activateOnLoad: ["eu35", "eu5", "eu20", "eu11", "eu16", "eu33"]
+        activateOnLoad: ["eu35", "eu33", "eu5"]
       });
       // END OF THE CSSMap;
     });
