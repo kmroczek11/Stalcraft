@@ -2,32 +2,46 @@
 
 #main {
   width: 60%;
-  display: block;
-  margin: 0 auto;
-  padding: 2%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .card {
   width: 30%;
+  min-width:200px;
   padding: 1%;
   margin: 1%;
 }
 
 h2 {
-  @include font-size(2rem);
+  @include font-size(2.5rem);
   font-family: 'Lato', sans-serif;
 }
 
 h4{
-  @include font-size(1.2rem);
+  @include font-size(1.3rem);
   font-family: 'Lato', sans-serif;
 }
 
 p {
-  @include font-size(1.2rem);
+  @include font-size(1.3rem);
   font-family: 'Lato', sans-serif;
 }
 
-.card{
-  min-width:200px;
+@media screen and (max-width: 500px) /* Mobile */ {
+  h2 {
+    @include font-size(2rem);
+    font-family: 'Lato', sans-serif;
+  }
+  
+  h4{
+    @include font-size(1rem);
+    font-family: 'Lato', sans-serif;
+  }
+
+  p {
+    @include font-size(1rem);
+  }
 }

@@ -1,18 +1,10 @@
 <!-- CSSMap - Europe -->
 <div class="p-5" id="map-europe">
   <ul class="europe">
-    <li
-      routerLinkActive="active"
-      *ngFor="let country of countries"
-      [class]="country.class"
-    >
-      <a
-        [routerLink]="['/implementations', country.name]"
-        href="#{{ country.name }}"
-        >{{ country.name }}</a
-      >
+    <li routerLinkActive="active" *ngFor="let country of countries" [class]="country.class">
+      <a [routerLink]="['/implementations', country.name]" href="#{{ country.name }}">{{ country.name }}</a>
     </li>
   </ul>
 </div>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <!-- END OF THE CSSMap - Europe -->

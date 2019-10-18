@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, NavigationEnd } from "@angular/router";
 declare var $: any;
 
 @Component({
@@ -17,7 +17,7 @@ export class ImplementationsComponent implements OnInit {
     { class: "eu33", name: "Netherlands" }
   ];
 
-  constructor(private router: Router) {}
+  constructor (private router: Router) { }
 
   ngOnInit() {
     $(document).ready(() => {
@@ -34,4 +34,10 @@ export class ImplementationsComponent implements OnInit {
     console.log("ok");
     this.router.navigate(["/implementations", country.name]);
   }
+
+  onActivate(event) {
+    document.body.scrollTop = document.body.scrollHeight
+    //or document.body.scrollTop = 0;
+    //or document.querySelector('body').scrollTo(0,0)
+}
 }

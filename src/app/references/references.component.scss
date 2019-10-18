@@ -16,3 +16,13 @@ img{
   margin-right:auto;
   width:80%;
 }
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .carousel{
+    width:60%;
+  }
+  
+  img{
+    width:100%;
+  }
+}

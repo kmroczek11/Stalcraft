@@ -12,7 +12,20 @@ export class ReferencesComponent {
     { img: "assets/logos/3.png" },
     { img: "assets/logos/4.png" }
   ];
-  slideConfig = { autoplay: true, slidesToShow: 3, slidesToScroll: 1 };
+  slideConfig = { 
+    autoplay: true,
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        }
+      }
+    ]
+  };
 
   addSlide() {
     this.slides.push({ img: "http://placehold.it/350x150/777777" });

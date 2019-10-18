@@ -28,10 +28,6 @@ button {
   padding: 0;
 }
 
-:host ::ng-deep img{
-  width:100%;
-}
-
 :host ::ng-deep .slick-dots {
   display: flex !important;
   justify-content: center;
