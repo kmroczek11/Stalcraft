@@ -19,29 +19,23 @@ export class BelgiumComponent implements OnInit {
     this.galleryOptions = [
       {
         width: "100%",
-        height: "400px",
+        height:'80vh',
         thumbnailsColumns: 4,
+        imagePercent: 100,
         imageAnimation: NgxGalleryAnimation.Slide,
         imageSize: NgxGalleryImageSize.Contain,
-        thumbnailSize: NgxGalleryImageSize.Contain
+        thumbnailSize: NgxGalleryImageSize.Contain,
+        thumbnailsPercent: 40
       },
-      // max-width 800
+      // max-width 500
       {
-        breakpoint: 800,
-        width: "100%",
-        height: "600px",
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
-      },
-      // max-width 400
-      {
-        breakpoint: 400,
-        preview: false
+        height:'50vh',
+        breakpoint: 500,
+        imagePercent: 70,
+        thumbnailsPercent: 20
       }
     ];
-
+    
     this.galleryImages = [
       {
         small: "assets/belgium/1.jpg",
