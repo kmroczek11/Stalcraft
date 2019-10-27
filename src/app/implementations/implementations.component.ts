@@ -17,7 +17,7 @@ export class ImplementationsComponent implements OnInit {
     { class: "eu33", name: "Netherlands" }
   ];
 
-  constructor (private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
     $(document).ready(() => {
@@ -30,14 +30,12 @@ export class ImplementationsComponent implements OnInit {
     });
   }
 
+  onActivate(e, scrollContainer) {
+    scrollContainer.scrollTop = document.body.clientHeight;
+  }
+
   onSelect(country) {
     console.log("ok");
     this.router.navigate(["/implementations", country.name]);
   }
-
-  onActivate(event) {
-    document.body.scrollTop = document.body.scrollHeight
-    //or document.body.scrollTop = 0;
-    //or document.querySelector('body').scrollTo(0,0)
-}
 }

@@ -19,7 +19,7 @@ export class PolandComponent implements OnInit {
     this.galleryOptions = [
       {
         width: "100%",
-        height:'80vh',
+        height: "80vh",
         thumbnailsColumns: 4,
         imagePercent: 100,
         imageAnimation: NgxGalleryAnimation.Slide,
@@ -29,7 +29,7 @@ export class PolandComponent implements OnInit {
       },
       // max-width 500
       {
-        height:'50vh',
+        height: "50vh",
         breakpoint: 500,
         imagePercent: 70,
         thumbnailsPercent: 20

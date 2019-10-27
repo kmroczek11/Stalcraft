@@ -7,12 +7,12 @@
 
 .content {
   @include font-size(1.5rem);
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 button {
   @include font-size(1rem);
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .text {
@@ -20,8 +20,9 @@ button {
 }
 
 .f-col {
-  // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  background: #d9d9d9;
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  // background: #d9d9d9;
 }
 
 .s-col {
@@ -38,7 +39,7 @@ button {
   src: url("../../assets/fonts/Capture_it.ttf") format("opentype");
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1500px){
   .row {
     display: flex;
     flex-direction: column;
