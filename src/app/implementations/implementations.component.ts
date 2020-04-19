@@ -30,9 +30,9 @@ export class ImplementationsComponent implements OnInit {
     });
   }
 
-  onActivate(e, scrollContainer) {
-    scrollContainer.scrollTop = document.body.clientHeight;
-  }
+  // onActivate(e, scrollContainer) {
+  //   scrollContainer.scrollTop = document.body.clientHeight;
+  // }
 
   onSelect(country) {
     console.log("ok");
