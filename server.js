@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const cors = require("cors");
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "0.0.0.0";
 const USER = process.env.USER;
@@ -10,6 +11,12 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
 app.use(express.static(__dirname + "/dist/stalcraft"));
+
+app.use(
+  cors({
+    origin: "https://stalcraft-page.herokuapp.com",
+  })
+);
 
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/stalcraft/index.html"));
