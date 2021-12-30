@@ -1,8 +1,20 @@
 const express = require("express");
-const nodemailer = require("nodemailer");
+const path = require("path");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || "0.0.0.0";
 const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
+
+app.use(express.static(__dirname + "/dist/stalcraft"));
+
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/stalcraft/index.html"));
+});
+
+app.listen(PORT, HOST, function () {
+  console.log("Express started on port: ", PORT);
+});
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -11,16 +23,16 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: "mrrroczek@gmail.com", // Enter here email address from which you want to send emails
-    pass: "Internattozlo11" // Enter here password for email account from which you want to send emails
+    pass: "Internattozlo11", // Enter here password for email account from which you want to send emails
   },
   tls: {
-    rejectUnauthorized: false
-  }
+    rejectUnauthorized: false,
+  },
 });
 
 app.use(bodyParser.json());
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -29,7 +41,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.post("/send", function(req, res) {
+app.post("/send", function (req, res) {
   let senderName = req.body.contactFormName;
   let senderEmail = req.body.contactFormEmail;
   let messageSubject = req.body.contactFormSubjects;
@@ -41,13 +53,13 @@ app.post("/send", function(req, res) {
     from: senderName,
     subject: messageSubject,
     text: messageText,
-    replyTo: senderEmail
+    replyTo: senderEmail,
   };
 
   if (senderName === "") {
     res.status(400);
     res.send({
-      message: "Bad request"
+      message: "Bad request",
     });
     return;
   }
@@ -55,7 +67,7 @@ app.post("/send", function(req, res) {
   if (senderEmail === "") {
     res.status(400);
     res.send({
-      message: "Bad request"
+      message: "Bad request",
     });
     return;
   }
@@ -63,7 +75,7 @@ app.post("/send", function(req, res) {
   if (messageSubject === "") {
     res.status(400);
     res.send({
-      message: "Bad request"
+      message: "Bad request",
     });
     return;
   }
@@ -71,7 +83,7 @@ app.post("/send", function(req, res) {
   if (messageText === "") {
     res.status(400);
     res.send({
-      message: "Bad request"
+      message: "Bad request",
     });
     return;
   }
@@ -80,7 +92,7 @@ app.post("/send", function(req, res) {
     mailOptions.to.push(senderEmail);
   }
 
-  transporter.sendMail(mailOptions, function(error, response) {
+  transporter.sendMail(mailOptions, function (error, response) {
     if (error) {
       console.log(error);
       res.end("error");
@@ -89,8 +101,4 @@ app.post("/send", function(req, res) {
       res.end("sent");
     }
   });
-});
-
-app.listen(port, function() {
-  console.log("Express started on port: ", port);
 });
