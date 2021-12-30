@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
   selector: "app-implementations",
   templateUrl: "./implementations.component.html",
-  styleUrls: ["./implementations.component.scss"]
+  styleUrls: ["./implementations.component.scss"],
 })
 export class ImplementationsComponent implements OnInit {
   countries = [
@@ -14,7 +14,7 @@ export class ImplementationsComponent implements OnInit {
     //{ class: "eu20", name: "Ireland" },
     //{ class: "eu11", name: "Denmark" },
     //{ class: "eu16", name: "Germany" },
-    { class: "eu33", name: "Netherlands" }
+    { class: "eu33", name: "Netherlands" },
   ];
 
   constructor(private router: Router) {}
@@ -24,7 +24,9 @@ export class ImplementationsComponent implements OnInit {
       $("#map-europe").CSSMap({
         size: 960,
         //activateOnLoad: ["eu35", "eu5", "eu20", "eu11", "eu16", "eu33"]
-        activateOnLoad: ["eu35", "eu33", "eu5"]
+        activateOnLoad: ["eu35", "eu33", "eu5"],
+        tapOnce: true,
+        mobileSupport: true,
       });
       // END OF THE CSSMap;
     });
@@ -35,7 +37,6 @@ export class ImplementationsComponent implements OnInit {
   // }
 
   onSelect(country) {
-    console.log("ok");
     this.router.navigate(["/implementations", country.name]);
   }
 }
