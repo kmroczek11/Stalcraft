@@ -9,9 +9,9 @@ import { IImage } from '../modules/slideshow/IImage';
 export class AboutComponent implements OnInit {
 
   imageSources: string[] = [
-    "assets/homeGallery/1.jpg",
-    "assets/homeGallery/2.jpg",
-    "assets/homeGallery/3.jpg",
+    "assets/homegallery/1.jpg",
+    "assets/homegallery/2.jpg",
+    "assets/homegallery/3.jpg",
   ];
 
   constructor() { }
