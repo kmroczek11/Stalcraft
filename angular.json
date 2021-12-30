@@ -61,8 +61,6 @@
               {
                 "input": "node_modules/hammerjs/hammer.min.js"
               },
-              { "input": "node_modules/jquery/dist/jquery.min.js" },
-              { "input": "node_modules/jquery/dist/jquery.cssmap.min.js" },
               { "input": "node_modules/slick-carousel/slick/slick.min.js" }
             ]
           },
@@ -84,7 +82,7 @@
               "vendorChunk": false,
               "buildOptimizer": true
             },
-            "en":{
+            "en": {
               "aot": true,
               "outputPath": "dist/en/",
               "i18nFile": "src/locale/messages.en.xlf",
@@ -103,7 +101,7 @@
             "production": {
               "browserTarget": "mdb-angular-free:build:production"
             },
-            "en":{
+            "en": {
               "browserTarget": "mdb-angular-free:build:en"
             }
           }

@@ -3,6 +3,9 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "0.0.0.0";
+const USER = process.env.USER;
+const PASS = process.env.PASS;
+
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
@@ -22,8 +25,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "mrrroczek@gmail.com", // Enter here email address from which you want to send emails
-    pass: "Internattozlo11", // Enter here password for email account from which you want to send emails
+    user: USER, // Enter here email address from which you want to send emails
+    pass: PASS, // Enter here password for email account from which you want to send emails
   },
   tls: {
     rejectUnauthorized: false,
