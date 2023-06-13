@@ -55,7 +55,8 @@
     "slick-carousel": "^1.8.1",
     "typescript": "~3.1.6",
     "web-animations-js": "^2.3.2",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "node-sass":"^4.14.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.9",
